@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exibir Código</title>
+  <style>
+    code {
+      background-color: #f4f4f4;
+      padding: 10px;
+      display: block;
+      white-space: pre;
+      font-family: monospace;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Configuração do VS Code:</h2>
+
+  <!-- Aqui será inserido o código -->
+  <div id="blocoCodigo"></div>
+
+  <script>
+    const codigo = `"editor.fontSize": 12,\n"workbench.colorTheme": "Min Dark"`;
+
+    const container = document.getElementById("blocoCodigo");
+
+    container.innerHTML = `
+      <pre><code>${codigo}</code></pre>
+    `;
+  </script>
+
+</body>
+</html>

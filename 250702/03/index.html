@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exibir Código com Prism</title>
+
+  <!-- Estilo do Prism -->
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #2d2d2d;
+      color: white;
+    }
+    pre {
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Configuração do VS Code:</h2>
+
+  <!-- Área onde o código será inserido -->
+  <div id="blocoCodigo"></div>
+
+  <!-- Prism.js -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-json.min.js"></script>
+
+  <script>
+    const codigo = `{
+  "editor.fontSize": 12,
+  "workbench.colorTheme": "Min Dark"
+}`;
+
+    const container = document.getElementById("blocoCodigo");
+
+    container.innerHTML = `
+      <pre><code class="language-json">${codigo}</code></pre>
+    `;
+
+    // Reprocessa o destaque depois de inserir o código dinamicamente
+    Prism.highlightAll();
+  </script>
+
+</body>
+</html>

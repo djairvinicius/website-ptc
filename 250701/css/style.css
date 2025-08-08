@@ -1,0 +1,26 @@
+body {
+	background-color:#121212;
+}
+.container {
+	background-color: #212121;
+	height: 180px;
+	border-radius: 10px;
+	/*ativa o flex box (caixa flexivel)*/
+	display: flex;
+	/*alinha na linha vertical*/
+	align-items: center;
+	/*alinha na linha horizontal*/
+	justify-content: center;
+	margin: 25px;
+}
+.element {
+	width: 100px;
+	height: 100px;
+	background-color: #486860;
+	border: 1px solid black;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5px;
+}

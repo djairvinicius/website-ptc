@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços</title>
+  <style>
+    /* Estilo geral da página */
+    body {
+      margin: 0; /* Remove a margem padrão do navegador */
+      font-family: sans-serif; /* Define uma fonte limpa */
+      background-color: #111; /* Fundo escuro da página */
+      color: #fff; /* Texto branco */
+    }
+
+    /* Barra de navegação no topo */
+    .navbar {
+      display: flex; /* Coloca os elementos em linha */
+      align-items: center; /* Centraliza verticalmente */
+      background-color: #1f1f1f; /* Cor de fundo da barra */
+      padding: 10px 20px; /* Espaçamento interno */
+      border-bottom: 1px solid #333; /* Linha separadora */
+    }
+
+    /* Logo ou ícone no canto esquerdo */
+    .navbar .logo {
+      margin-right: 10px;
+      color: #ccc; /* Cinza claro */
+      font-size: 18px;
+    }
+
+    /* Caminho de navegação (breadcrumb) */
+    .navbar .breadcrumb {
+      color: #aaa; /* Cinza médio */
+      font-size: 14px;
+    }
+
+    /* Links dentro do breadcrumb */
+    .navbar .breadcrumb a {
+      color: #ccc;
+      text-decoration: none; /* Remove o sublinhado */
+    }
+
+    .navbar .breadcrumb a:hover {
+      text-decoration: underline; /* Sublinha ao passar o mouse */
+    }
+
+    /* Separador entre os itens do breadcrumb */
+    .navbar .breadcrumb span {
+      margin: 0 5px;
+    }
+
+    /* Área direita da barra com botões */
+    .navbar .right {
+      margin-left: auto; /* Empurra os itens para o canto direito */
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Espaçamento entre os botões */
+    }
+
+    /* Estilo dos botões da barra superior */
+    .navbar .button {
+      background: #2f2f2f;
+      color: #ccc;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .navbar .button:hover {
+      background: #444; /* Cor mais clara ao passar o mouse */
+    }
+
+    /* Cabeçalho grande com fundo (banner da página) */
+    .page-title {
+      padding: 40px 20px;
+      background: url('sua-imagem-de-fundo.jpg') center/cover no-repeat;
+      /* Substitua o caminho acima pela imagem de fundo que você quiser */
+    }
+
+    /* Título principal da página */
+    .page-title h1 {
+      font-size: 36px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Ícone antes do título "Serviços" */
+    .page-title h1::before {
+      content: "🪛"; /* Ícone chave de fenda */
+      margin-right: 10px;
+      font-size: 30px;
+    }
+
+    /* Área principal com links de serviços */
+    .content {
+      padding: 20px;
+    }
+
+    /* Links de serviços */
+    .content a {
+      display: block; /* Um abaixo do outro */
+      margin-top: 10px;
+      color: #aaa;
+      text-decoration: underline;
+    }
+
+    .content a:hover {
+      color: #fff; /* Fica branco ao passar o mouse */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegação -->
+  <div class="navbar">
+    <div class="logo">🅓</div> <!-- Ícone/Logo -->
+    <div class="breadcrumb">
+      <a href="#">Djair's</a> <span>/</span>
+      <span>🪛 Serviços</span> <!-- Título da seção -->
+    </div>
+    <div class="right">
+      <!-- Botões (exemplo: lupa, menu e chamada para ação) -->
+      <button class="button">🔍</button>
+      <button class="button">☰</button>
+      <button class="button">Use o Notion de graça</button>
+    </div>
+  </div>
+
+  <!-- Cabeçalho da página com título -->
+  <div class="page-title">
+    <h1>Serviços</h1>
+  </div>
+
+  <!-- Conteúdo principal da página -->
+  <div class="content">
+    <a href="#">Instalação e formatação</a>
+    <a href="#">Remoção de senhas</a>
+  </div>
+
+</body>
+</html>
