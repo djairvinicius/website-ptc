@@ -10,8 +10,10 @@
 	box-sizing: border-box;
 }
 body {
+	height: 100vh;
+	width: 100vw;
 	font-family: Arial, sans-serif;
-	background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+	background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 	url("../assets/images/fundo.jpg");
 	background-size: cover;
 	background-position: center;
@@ -19,6 +21,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
 }
 .navbar {
 	height: 60px;
@@ -55,20 +58,23 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 50px;
+	margin-bottom: 40px;
 }
 .title {
 	color: #ffffff;
 	font-weight: bold;
 	font-family: "Chomsky", sans-serif;
+	font-size: 32px;
+	margin-bottom: 40px;
 }
 .text {
 	color: #ffffff;
 	font-size: 12px;
-	margin-top: 20px;
 }
 .rodape {
 	color: #ffffff;
 	font-size: 7px;
+	position: absolute;
+	bottom: 30px;
 }
