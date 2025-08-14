@@ -1,0 +1,70 @@
+@font-face {
+	font-family: "Chomsky";
+	src: url("../assets/fonts/Chomsky.woff")
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, sans-serif;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+	url("../assets/images/fundo.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.navbar {
+	height: 60px;
+	width: 100%;
+	background-color: #212121;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+.logo {
+	height: 40px;
+	width: 40px;
+	border-radius: 2000px;
+}
+.nav-links {
+	list-style: none;
+	display: flex;
+}
+.nav-links li {
+	margin-left: 20px;
+}
+.nav-links a {
+	text-decoration: none;
+	color: #ffffff;
+	transition: color 0.3s;
+	font-size: 12px;
+}
+.nav-links a:hover {
+	color: #ff9800;
+}
+.cabecalho {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.title {
+	color: #ffffff;
+	font-weight: bold;
+}
+.text {
+	color: #ffffff;
+	font-size: 12px;
+	margin-top: 20px;
+}
+.rodape {
+	color: #ffffff;
+	font-size: 7px;
+}
