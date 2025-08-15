@@ -1,0 +1,80 @@
+@font-face {
+	font-family: "Chomsky";
+	src: url("../assets/fonts/Chomsky.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	font-family: Arial, sans-serif;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+	url("../assets/images/fundo.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+.navbar {
+	height: 60px;
+	width: 100%;
+	background-color: #212121;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+.logo {
+	height: 40px;
+	width: 40px;
+	border-radius: 2000px;
+}
+.nav-links {
+	list-style: none;
+	display: flex;
+}
+.nav-links li {
+	margin-left: 20px;
+}
+.nav-links a {
+	text-decoration: none;
+	color: #ffffff;
+	transition: color 0.3s;
+	font-size: 12px;
+}
+.nav-links a:hover {
+	color: #ff9800;
+}
+.cabecalho {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+.title {
+	color: #ffffff;
+	font-weight: bold;
+	font-family: "Chomsky", sans-serif;
+	font-size: 32px;
+	margin-bottom: 40px;
+}
+.text {
+	color: #ffffff;
+	font-size: 12px;
+}
+.rodape {
+	color: #ffffff;
+	font-size: 7px;
+	position: absolute;
+	bottom: 30px;
+}
