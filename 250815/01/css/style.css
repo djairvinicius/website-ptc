@@ -72,6 +72,32 @@ body {
 	color: #ffffff;
 	font-size: 12px;
 }
+.sessao {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.icons {
+	height: 14px;
+	width: 14px;
+	margin-right: 10px;
+}
+.github {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 40px;
+}
+.html5 {
+	margin-top: 20px;
+	margin-left: 40px;
+}
+.links {
+	text-decoration: none;
+	color: #ffffff;
+}
 .rodape {
 	color: #ffffff;
 	font-size: 7px;
