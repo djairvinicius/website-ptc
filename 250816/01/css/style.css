@@ -21,6 +21,9 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 20px;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
 }
 .logocontainer {
 	display: flex;
@@ -76,12 +79,12 @@ body {
 }
 .title2 {
 	color: #ffffff;
-	font-size: 27px;
+	font-size: 25px;
 	margin-bottom: 10px;
 }
 .text {
 	color: #ffffff;
-	font-size: 12;
+	font-size: 12px;
 	margin-bottom: 40px;
 }
 .principal {
@@ -94,12 +97,41 @@ body {
 		width: 80%;
 	}
 }
+.icondocs {
+	height: 50px;
+	width: 50px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.icontest {
+	height: 50px;
+	width: 50px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.docs {
+	height: 180px;
+	width: 100% ;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #212121;
+	border-radius: 5px;
+}
+.projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 .github {
 	height: 25px;
 	display: flex;
 	align-items: center;
 	background-color: #212121;
-	border-radius: 6px;
+	border-radius: 2px;
+	transition: background-color: 0.3s;
 }
 .github:hover {
 	background-color: #e3c394;
@@ -110,7 +142,8 @@ body {
 	align-items: center;
 	background-color: #212121;
 	margin-top: 20px;
-	border-radius: 6px;
+	border-radius: 2px;
+	transition: background-color 0.3s;
 }
 .html5:hover {
 	background-color: #e3c394;
