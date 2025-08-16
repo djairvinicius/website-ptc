@@ -17,7 +17,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	position: relative;
 }
 .navbar {
 	height: 60px;
@@ -30,6 +29,8 @@ body {
 	padding: 10px 20px;
 }
 .logocontainer {
+	display: flex;
+	align-items: center;
 }
 .logo {
 	height: 40px;
@@ -37,9 +38,9 @@ body {
 	border-radius: 2000px;
 }
 .logotext {
-    font-size: 20px;
-    color: white;
-    margin-left: 8px; /* espaço entre logo e texto */
+    	font-size: 20px;
+    	color: #ffffff;
+    	margin-left: 10px;
 }
 .nav-links {
 	list-style: none;
@@ -74,8 +75,19 @@ body {
 	font-size: 42px;
 	text-align: center;
 	font-weight: bold;
-	margin-top: 220px;
-	margin-bottom: 220px;
+	margin-top: 260px;
+	margin-bottom: 300px;
+}
+.text2 {
+	color: #ffffff;
+	font-size: 27px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.text3 {
+	color: #ffffff;
+	font-size: 12;
+	margin-bottom: 30px;
 }
 .principal {
 	width: 50%;
@@ -113,8 +125,13 @@ body {
 	color: #ffffff;
 }
 .rodape {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.rodapetext {
 	color: #ffffff;
 	font-size: 7px;
-	position: absolute;
-	bottom: 30px;
+	margin-bottom: 40px; 
 }
