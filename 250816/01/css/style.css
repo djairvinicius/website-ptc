@@ -32,7 +32,7 @@ body {
 	border-radius: 2000px;
 }
 .logotext {
-    	font-size: 18px;
+    	font-size: 15px;
     	color: #ffffff;
     	margin-left: 10px;
 }
@@ -66,7 +66,7 @@ body {
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
-.text {
+.titlemain {
 	color: #ffffff;
 	font-size: 42px;
 	text-align: center;
@@ -74,15 +74,15 @@ body {
 	margin-top: 260px;
 	margin-bottom: 300px;
 }
-.text2 {
+.title2 {
 	color: #ffffff;
 	font-size: 27px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
-.text3 {
+.text {
 	color: #ffffff;
 	font-size: 12;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 .principal {
 	width: 50%;
@@ -101,6 +101,9 @@ body {
 	background-color: #212121;
 	border-radius: 6px;
 }
+.github:hover {
+	background-color: #e3c394;
+}
 .html5 {
 	height: 25px;
 	display: flex;
@@ -108,6 +111,9 @@ body {
 	background-color: #212121;
 	margin-top: 20px;
 	border-radius: 6px;
+}
+.html5:hover {
+	background-color: #e3c394;
 }
 .icons {
 	height: 14px;
