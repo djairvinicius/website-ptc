@@ -74,8 +74,8 @@ body {
 	font-size: 42px;
 	text-align: center;
 	font-weight: bold;
-	margin-top: 260px;
-	margin-bottom: 300px;
+	margin-top: 200px;
+	margin-bottom: 250px;
 }
 .title2 {
 	color: #ffffff;
@@ -119,7 +119,7 @@ body {
 	url("../assets/backgrounds/back1.jpg");
 	background-size: cover;
 	background-position: center;
-	border-radius: 5px;
+	border-radius: 12px;
 	margin: 10px;
 	transition: height 0.5s ease, width 0.5s ease;
 }
@@ -129,52 +129,43 @@ body {
 }
 .projects {
 	height: 180px;
-	width: 382px;
+	min-width: 382px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image:
+        linear-gradient(#2121214D, #2121214D),
+        url("../assets/backgrounds/back2.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
+        margin: 10px;
+        transition: height 0.5s ease, width 0.5s ease;
+}
+.projects:hover {
+        height: 190px;
+        width: 392px;
+}
+.button {
+	height: 100px;
+	width: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-image: 
-	linear-gradient(#2121214D, #2121214D),
-	url("../assets/backgrounds/back3.jpg");
-	background-size: cover;
-	background-position: center;
-	border-radius: 5px;
-	margin: 10px;
-	transition: height 0.5s ease, width 0.5s ease;
-}
-.projects:hover {
-	height: 190px;
-	width: 392px;
-}
-.github {
-	height: 25px;
-	display: flex;
-	align-items: center;
 	background-color: #212121;
-	border-radius: 2px;
+	margin: 10px;
+	border-radius: 12px;
 	transition: background-color: 0.3s;
 }
-.github:hover {
-	background-color: #e3c394;
-}
-.html5 {
-	height: 25px;
-	display: flex;
-	align-items: center;
-	background-color: #212121;
-	margin-top: 20px;
-	border-radius: 2px;
-	transition: background-color 0.3s;
-}
-.html5:hover {
+.button:hover {
 	background-color: #e3c394;
 }
 .icons {
-	height: 14px;
-	width: 14px;
-	margin-right: 6px;
-	margin-left: 6px;
+	height: 20px;
+	width: 20px;
+	margin-bottom: 6px;
 }
 .links {
 	text-decoration: none;
