@@ -102,6 +102,8 @@ body {
 	margin-bottom: 20px;
 }
 .iconscards {
+	position: relative;
+	z-index: 1;
 	height: 50px;
 	width: 50px;
 	margin-top: 30px;
@@ -109,7 +111,7 @@ body {
 }
 .docs {
 	height: 180px;
-	width: 382px;
+	width: 380px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -125,11 +127,11 @@ body {
 }
 .docs:hover {
 	height: 190px;
-	width: 392px;
+	width: 390px;
 }
 .projects {
 	height: 180px;
-	min-width: 382px;
+	width: 380px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -145,7 +147,7 @@ body {
 }
 .projects:hover {
         height: 190px;
-        width: 392px;
+        width: 390px;
 }
 .button {
 	height: 100px;
@@ -162,14 +164,77 @@ body {
 .button:hover {
 	background-color: #e3c394;
 }
+.terminal::before  {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image:
+	linear-gradient(#21212180, #21212180),
+	url("../assets/images/terminal-debian.jpg");
+	background-size: cover;
+	background-position: center;
+	filter: blur(4px);
+	z-index: 0;
+}
+.terminal {
+	position: relative;
+	height: 180px;
+	width: 380px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
+	margin: 10px;
+	overflow: hidden;
+	transition: height 0.5s ease, width 0.5s ease;
+}
+.terminal:hover {
+	height: 190px;
+	width: 390px;
+}
+.github::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image:
+	linear-gradient(#21212180, #21212180),
+	url(../assets/images/website.jpg);
+	background-size: cover;
+	background-position: center;
+	filter: blur(4px);
+	z-index: 0;
+}
+.github {
+	position: relative;
+	height: 180px;
+	width: 380px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
+	margin: 10px;
+	overflow: hidden;
+	transition: height 0.5s ease, width 0.5s ease;
+}
+.github:hover {
+	height: 190px;
+	width: 380px;
+}
 .icons {
+	position: relative;
+	z-index: 1;
 	height: 20px;
 	width: 20px;
 	margin-bottom: 6px;
 }
 .links {
+	position: relative;
+	z-index: 1;
 	text-decoration: none;
 	color: #ffffff;
+	font-size: 25px;
 }
 .rodape {
 	height: 100px;
