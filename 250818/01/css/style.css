@@ -85,7 +85,6 @@ body {
 .text {
 	color: #ffffff;
 	font-size: 12px;
-	margin-bottom: 40px;
 }
 .principal {
 	width: 85%;
@@ -106,7 +105,6 @@ body {
 	z-index: 1;
 	height: 50px;
 	width: 50px;
-	margin-top: 30px;
 	margin-bottom: 15px;
 }
 .docs {
